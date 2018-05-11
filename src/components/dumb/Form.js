@@ -10,29 +10,34 @@ const Form = props => (
         type="text"
         name="searchTerm"
         placeholder="enter anything..."
+        required
       /><br />
 
       <Center>
-      <label>limit</label>
+      <label>
+      <span className="inputTitle">Limit</span>
       <select
         name="searchLimit">
         <option value="5">5</option>
         <option value="10">10</option>
-        <option selected value="15">15</option>
+        <option defaultValue value="15">15</option>
         <option value="25">25</option>
       </select>
+      </label>
 
 
-      <label>Sort by</label>
+      <label>
+      <span className="inputTitle">Sort by</span>
       <select
         name="sortBy">
         <option value="relevance">relevance</option>
         <option value="hot">hot</option>
-        <option selected value="top">top</option>
+        <option defaultValue value="top">top</option>
         <option value="new">new</option>
         <option value="comments">comments</option>
         
       </select>
+      </label>
       </Center>
       <Center>
         <button className="btn btn-primary">Search</button>
