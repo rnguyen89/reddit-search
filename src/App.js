@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+import {Container} from 'reactstrap';
 import axios from 'axios';
 import MainBody from './components/dumb/MainBody';
 import Form from './components/dumb/Form';
@@ -56,30 +55,11 @@ class App extends Component {
         <LandingPage />
         <MainBody />
         <Form getRedditData={this.getRedditData} />
-        {this.state.redditResults.map((redditResult) => {
-          return (
-            <div key={redditResult.data.id}>
-            <Card>
-              <CardImg top width={redditResult.data.thumbnail_width
-} src={redditResult.data.thumbnail} alt="Card image cap" />
-              <CardBody>
-                <CardTitle>{redditResult.data.title}</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
-                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                <Button>click</Button>
-              </CardBody>
-            </Card>
-          </div>
-          )
-        })}
+        <Container>
         <SearchResults
-          getRedditData={this.getRedditData}
-          title={this.state.title}
-          created={this.state.created}
-          url={this.state.url}
-          image={this.state.image}
-          error={this.state.error}
+          redditResults={this.state.redditResults}
         />
+        </Container>
         <Footer />
       </div>
     );

@@ -14,7 +14,7 @@ const Footer = () => (
             </a>
           </li>
           <li>
-            <a href="https://github.com/rnguyen89/" rel="noopener noreferrer" target="_blank">
+            <a href="https://github.com/rnguyen89/reddit-search" rel="noopener noreferrer" target="_blank">
               <i className="fa fa-github fa-3x"></i>
             </a>
           </li>
