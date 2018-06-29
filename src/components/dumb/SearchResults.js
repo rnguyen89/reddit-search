@@ -19,3 +19,5 @@ class SearchResults extends React.Component {
 
 
 export default SearchResults;
+
+// https://www.reddit.com/r/Showerthoughts/
