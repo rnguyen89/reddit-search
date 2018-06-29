@@ -16,21 +16,9 @@ const API_KEY = 'k7D9kBkFB-oSQlLXIrAdzNzuWI8';
 
 class App extends Component {
 
-  // state = {
-  //   title: undefined,
-  //   created: undefined,
-  //   url: undefined,
-  //   preview: undefined,
-  //   error: undefined
-  // }
-
   state = {
     redditResults: []
   }
-
-  // componentDidMount() {
-  //   this.getRedditData();
-  // }
 
   getRedditData = async (e) => {
     e.preventDefault();
@@ -47,7 +35,6 @@ class App extends Component {
     console.log(this.state.redditResults);
 
   }
-
 
   render() {
     return (
