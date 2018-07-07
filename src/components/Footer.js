@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import { Jumbotron } from 'react-bootstrap';
 import Center from 'react-center';
 
 const Footer = () => (

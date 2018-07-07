@@ -1,9 +1,12 @@
 import React from 'react';
-import { FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
+import { FormGroup, FormControl } from 'react-bootstrap';
 import Center from 'react-center';
+import { Jumbotron } from 'react-bootstrap';
+
 import './Form.css'
 
 const Form = props => (
+  <Jumbotron>
   <form onSubmit={props.getRedditData}>
     <FormGroup>
       <FormControl
@@ -44,6 +47,7 @@ const Form = props => (
       </Center>
     </FormGroup>
   </form>
+  </Jumbotron>
 )
 
 export default Form;

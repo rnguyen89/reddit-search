@@ -9,9 +9,18 @@ select, .inputTitle {
 }
 
 .inputTitle {
-  color: white;
+  color: red;
 }
 
 .btn, form {
   margin-top: 20px;
+}
+
+.form-group {
+  border: 10px solid ghostwhite;
+  padding: 2em;
+}
+
+.jumbotron {
+  background-color: transparent;
 }
