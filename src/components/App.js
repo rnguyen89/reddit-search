@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Navbar, Nav, NavItem} from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { LinkContainer } from "react-router-bootstrap";
 
@@ -12,7 +12,7 @@ import './App.css';
 
 
 
-const API_KEY = 'k7D9kBkFB-oSQlLXIrAdzNzuWI8';
+// const API_KEY = 'k7D9kBkFB-oSQlLXIrAdzNzuWI8';
 
 
 class App extends Component {
@@ -49,12 +49,12 @@ class App extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-            <LinkContainer to="/About">
-              <NavItem>About</NavItem>
-            </LinkContainer>
-            <LinkContainer to="thread">
-              <NavItem>Thread</NavItem>
-            </LinkContainer>
+              <LinkContainer to="/about">
+                <NavItem>About</NavItem>
+              </LinkContainer>
+              <LinkContainer to="thread">
+                <NavItem>Thread</NavItem>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
