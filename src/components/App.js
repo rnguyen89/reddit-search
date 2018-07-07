@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { LinkContainer } from "react-router-bootstrap";
 
 import Routes from "./Routes";
 import Form from './Form';
@@ -41,18 +43,18 @@ class App extends Component {
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="/home">Home</a>
+              <Link to="/home">Home</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem eventKey={1} href="/about">
-                About
-              </NavItem>
-              <NavItem eventKey={2} href="thread">
-                Thread
-              </NavItem>
+            <LinkContainer to="/About">
+              <NavItem>About</NavItem>
+            </LinkContainer>
+            <LinkContainer to="thread">
+              <NavItem>Thread</NavItem>
+            </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
