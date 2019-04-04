@@ -1,6 +1,5 @@
 footer {
   margin-top: 500px;
-  
 }
 
 .social-btn li {
@@ -9,6 +8,6 @@ footer {
 }
 
 a {
-  color: red;
+  color: rgb(32, 32, 32);
   margin-right: 1em;
 }

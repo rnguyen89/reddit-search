@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 
 import Routes from "./Routes";
-import Form from "./Form";
-import SearchResults from "./SearchResults";
+// import Form from "./Form";
+// import SearchResults from "./SearchResults";
 import Footer from "./Footer";
 
 import "./App.css";
@@ -13,26 +13,26 @@ import "./App.css";
 // const API_KEY = 'k7D9kBkFB-oSQlLXIrAdzNzuWI8';
 
 class App extends Component {
-  state = {
-    redditResults: []
-  };
+  // state = {
+  //   redditResults: []
+  // };
 
-  getRedditData = async e => {
-    e.preventDefault();
-    const searchTerm = e.target.elements.searchTerm.value;
-    const sortBy = e.target.elements.sortBy.value;
-    const searchLimit = e.target.elements.searchLimit.value;
+  // getRedditData = async e => {
+  //   e.preventDefault();
+  //   const searchTerm = e.target.elements.searchTerm.value;
+  //   const sortBy = e.target.elements.sortBy.value;
+  //   const searchLimit = e.target.elements.searchLimit.value;
 
-    const api_call = await fetch(
-      `https://www.reddit.com/search.json?q=${searchTerm}&sort=${sortBy}&limit=${searchLimit}`
-    );
+  //   const api_call = await fetch(
+  //     `https://www.reddit.com/search.json?q=${searchTerm}&sort=${sortBy}&limit=${searchLimit}`
+  //   );
 
-    const results = await api_call.json();
-    this.setState({
-      redditResults: results.data.children
-    });
-    console.log(this.state.redditResults);
-  };
+  //   const results = await api_call.json();
+  //   this.setState({
+  //     redditResults: results.data.children
+  //   });
+  //   console.log(this.state.redditResults);
+  // };
 
   render() {
     return (
@@ -56,8 +56,8 @@ class App extends Component {
           </Navbar.Collapse>
         </Navbar>
         <Routes />
-        <Form getRedditData={this.getRedditData} />
-        <SearchResults redditResults={this.state.redditResults} />
+        {/* <Form getRedditData={this.getRedditData} />
+        <SearchResults redditResults={this.state.redditResults} /> */}
         <Footer />
       </div>
     );

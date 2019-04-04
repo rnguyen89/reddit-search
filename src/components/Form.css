@@ -1,26 +1,46 @@
 .form-control {
   width: 50%;
-  margin: 0 auto;
-  text-align: center;
+  /* margin: 0 auto; */
+  /* text-align: center; */
 }
 
-select, .inputTitle {
-  padding: 10px;
+select,
+.inputTitle {
+  margin-right: 0.3em;
 }
 
 .inputTitle {
-  color: red;
+  color: #808080;
 }
 
-.btn, form {
-  margin-top: 20px;
+form {
+  margin: 40px auto 40px auto;
+  width: 360px;
+  background-color: #c6c9ca8a;
+  /* width: 284px; */
+  border: 5px solid #bdbdbd70;
+  background-color: #e3e5e68a;
+  -webkit-box-shadow: 5px 5px 5px #aaaaaa;
+  box-shadow: 5px 5px 5px #aaaaaae8;
 }
 
 .form-group {
-  border: 10px solid ghostwhite;
-  padding: 2em;
+  padding: 1em;
+}
+.form-control {
+  width: 100%;
+}
+
+.btn {
+  background-color: #e43910cc;
+  box-shadow: 2px 2px 1px 1px #ce5757e8;
+  width: 70px;
+  height: 20px;
+  color: #fff;
+  line-height: 1%;
+  font-weight: 700;
 }
 
 .jumbotron {
-  background-color: transparent;
+  background-color: #e1e1e657;
 }
